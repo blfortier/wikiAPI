@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wikipedia API</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style = "background-color: #eaece5;">
+
+    <!-- Create the container to hold the entire application -->
+    <div class="container" style="margin-top: 75px;">
+        <div class="row">
+            <div class="col-sm">
+                <!-- Create a card to hold the Wikipedia logo, making it a link to a random Wikipedia article -->
+                <div class="card" style="text-align: center">
+                    <div class="card-body">
+                        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                        <img style = "height:200px; width: auto;"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Wikipedia-logo-v2-wordmark.svg/135px-Wikipedia-logo-v2-wordmark.svg.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <!-- A card to hold the search box and display search results-->
+            <div class="card" style="text-align: center; padding: 50px;">
+                <div class="card-body">
+                    <input class="form-control" id="searchTerm">
+                    <button id="search" type="button" class="btn btn-design button-shadow">Find!</button>
+                    <div class="design" id="results" style="text-align: center; margin-top: 25px; background-color: #f0f0f0; color: #50394c;"></div>
+                </div>
+                <p id="displayError"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
